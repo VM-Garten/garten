@@ -99,6 +99,11 @@
         .md-wide { 
             grid-column: span 4; /* Geht über die 4 Spalten der Beetbreite (4 Spalten) */
         }
+
+        .db-wide { 
+            grid-column: span 6; /* Geht über die gesamte Beetbreite (alle 6 Spalten) */
+            grid-row: span 2;    /* zwei Zeilen tief */
+        }
         
         .quarter-block {
             grid-column: span 3; /* eine spalte breit Breite bei 6 Spalten */
@@ -156,7 +161,7 @@
     <div class="beet">
         <div class="beet-title">Beet 4</div>
         <div class="plot-grid">
-            <div class="plant wide" style="background:#558B2F;">Safran, Thymian & Koriander</div>
+            <div class="plant db-wide" style="background:#558B2F;">Safran, Thymian & Koriander</div>
             <div class="plant">🌽 Mais</div>
             <div class="plant">🧅 Zwiebeln (rot)</div>
             <div class="plant">🌽 Mais</div>
