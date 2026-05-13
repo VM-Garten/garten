@@ -97,10 +97,15 @@
         }
         
         .quarter-block {
+            grid-column: span 3; /* eine spalte breit Breite bei 6 Spalten */
+            grid-row: span 2;    /* zwei Zeilen tief */
+        }
+        
+        .column-block {
             grid-column: span 1; /* eine spalte breit Breite bei 6 Spalten */
             grid-row: span 3;    /* drei Zeilen tief */
         }
-
+        
         .status-ready { background-color: #4CAF50 !important; border: 2px solid white; } /* Grün */
         .status-waiting { background-color: #8D6E63 !important; opacity: 0.8; } /* Erdbraun */
         
@@ -155,7 +160,8 @@
     <div class="beet">
         <div class="beet-title">Beet 3</div>
         <div class="plot-grid">
-            <div class="plant quarter-block">🪻 Lavendel</div>
+            <div class="plant column-block">🪻 Lavendel</div>
+            <div class="plant column-block">🪴 Basilikum</div>
             <div class="plant">🪴 Basilikum</div>
             <div class="plant">🥒 Zucchini</div>
             <div class="plant" style="background: #8BC34A;">🥬 Salat</div>
